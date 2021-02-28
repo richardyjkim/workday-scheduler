@@ -35,5 +35,24 @@ let loadTasks = function() {
   });
 }; 
 
+// color check
+let timeColor =$(".time-block");
+let now = parseInt(moment().format("H"));
+
+$.each(timeColor, function (i,hour){
+  let hourId = parseInt($(this).attr("id"));
+  console.log(this);
+  if (hourId == now){
+    $(this).closest("description").addClass("present")
+    $(this).addClass("present");
+   
+  } else if (hourId < now) {
+    $(this).addClass("past")
+
+  } else if (hourId > now) {
+    $(this).addClass("future")
+  }
+});
+
 loadTasks();
 
