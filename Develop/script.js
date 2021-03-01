@@ -39,12 +39,9 @@ let auditTask = function() {
   $.each(timeBlocks, function (index, timeBlock) {
     let timeBlockHour = parseInt($(timeBlock).attr("hour"));
     if (timeBlockHour == now){
-      
       $(timeBlock).addClass("present");
-    
     } else if (timeBlockHour < now) {
       $(timeBlock).addClass("past")
-
     } else if (timeBlockHour > now) {
       $(timeBlock).addClass("future")
     }
@@ -55,4 +52,5 @@ loadTasks();
 auditTask();
 
 setInterval(function(){
-  auditTask();},3600000);
+  auditTask();},180000);
+
