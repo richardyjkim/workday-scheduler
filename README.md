@@ -22,7 +22,7 @@ simply type in, and it will keep track of your work
 
 ## Installation
 
-- Please visit Website https://richardyjkim.github.io/workday-sheduler
+- Please visit Website https://richardyjkim.github.io/workday-scheduler/
 
 
 ## Usage 
