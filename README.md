@@ -1,4 +1,4 @@
-# Password Generator
+# Workday-Scheduler
 
 ## Description 
 
